@@ -1,0 +1,9 @@
+echo "Hello from .bashrc"
+
+{{ if eq .chezmoi.os "darwin" }}
+  echo "You're on a Mac!"
+{{ end }}
+
+{{ if eq .chezmoi.os "linux" }}
+  echo "You're on Linux!"
+{{ end }}
